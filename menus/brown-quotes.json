@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle brown-quotes",
+        "command": "brown-quotes:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "brown-quotes",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "brown-quotes:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
