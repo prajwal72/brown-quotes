@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle brown-quotes",
-        "command": "brown-quotes:toggle"
+        "label": "Fetch brown-quotes",
+        "command": "brown-quotes:fetch"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "brown-quotes",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "brown-quotes:toggle"
+              "label": "Fetch Quote",
+              "command": "brown-quotes:fetch"
             }
           ]
         }

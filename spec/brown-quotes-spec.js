@@ -15,7 +15,7 @@ describe('BrownQuotes', () => {
     activationPromise = atom.packages.activatePackage('brown-quotes');
   });
 
-  describe('when the brown-quotes:toggle event is triggered', () => {
+  describe('when the brown-quotes:fetch event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
@@ -23,7 +23,7 @@ describe('BrownQuotes', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'brown-quotes:toggle');
+      atom.commands.dispatch(workspaceElement, 'brown-quotes:fetch');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -37,7 +37,7 @@ describe('BrownQuotes', () => {
 
         let brownQuotesPanel = atom.workspace.panelForItem(brownQuotesElement);
         expect(brownQuotesPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'brown-quotes:toggle');
+        atom.commands.dispatch(workspaceElement, 'brown-quotes:fetch');
         expect(brownQuotesPanel.isVisible()).toBe(false);
       });
     });
@@ -55,7 +55,7 @@ describe('BrownQuotes', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'brown-quotes:toggle');
+      atom.commands.dispatch(workspaceElement, 'brown-quotes:fetch');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -65,7 +65,7 @@ describe('BrownQuotes', () => {
         // Now we can test for view visibility
         let brownQuotesElement = workspaceElement.querySelector('.brown-quotes');
         expect(brownQuotesElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'brown-quotes:toggle');
+        atom.commands.dispatch(workspaceElement, 'brown-quotes:fetch');
         expect(brownQuotesElement).not.toBeVisible();
       });
     });
