@@ -8,3 +8,6 @@
 ## 1.0.0
 * Offline Quotes added
 * Bug Fixes
+
+## 1.0.1
+* Update Readme
