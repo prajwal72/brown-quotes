@@ -4,3 +4,7 @@
 
 ## 0.2.0
 * Foramtting of quotes done
+
+## 1.2.0
+* Offline Quotes added
+* Bug Fixes
