@@ -11,3 +11,13 @@
 
 ## 1.0.1
 * Update Readme
+
+## 1.1.0
+* Update dependencies
+
+## 1.1.1
+* Update dependencies
+
+## 1.1.2
+* Update description
+* Update CHANGELOG.md
