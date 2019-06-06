@@ -12,5 +12,8 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "cheerio":">=20.0.0",
+    "request":">=2.0.0"
+  }
 }
